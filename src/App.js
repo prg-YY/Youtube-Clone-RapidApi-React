@@ -6,7 +6,7 @@ import {
   Feed,
   VideoDetail,
   ChannelDetail,
-  SeacrhFeed,
+  SearchFeed,
 } from "./components"
 
 const App = () => (
@@ -14,10 +14,10 @@ const App = () => (
     <Box sx={{ backgroundColor: "#000" }}>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Feed />} />
+        <Route exact path="/" element={<Feed />} />
         <Route path="/video/:id" element={<VideoDetail />} />
-        <Route path="/channal/:id" element={<ChannelDetail />} />
-        <Route path="/search/:searchTerm" element={<SeacrhFeed />} />
+        <Route path="/channel/:id" element={<ChannelDetail />} />
+        <Route path="/search/:searchTerm" element={<SearchFeed />} />
       </Routes>
     </Box>
   </BrowserRouter>

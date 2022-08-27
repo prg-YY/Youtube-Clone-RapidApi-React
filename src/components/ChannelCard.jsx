@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 import { demoProfilePicture } from "../utils/constants"
 
-const channelCard = ({ channelDetail }) => {
+const channelCard = ({ channelDetail, marginTop }) => {
   return (
     <Box
       sx={{
@@ -13,10 +13,16 @@ const channelCard = ({ channelDetail }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: { sx: "365px", md: "320px", height: "326px", margin: "auto" },
+        width: {
+          sx: "365px",
+          md: "320px",
+          height: "326px",
+          margin: "auto",
+          marginTop,
+        },
       }}
     >
-      <Link to={`/chanal/${channelDetail?.id?.channelId}`}>
+      <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <CardContent
           sx={{
             display: "flex",
@@ -48,7 +54,7 @@ const channelCard = ({ channelDetail }) => {
             <Typography>
               {parseInt(
                 channelDetail?.statistics?.subscriberCount
-              ).toLocaleString()}
+              ).toLocaleString("en-US")}{" "}
               Subscribers
             </Typography>
           )}
