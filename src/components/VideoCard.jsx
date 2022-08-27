@@ -19,7 +19,7 @@ const VideoCard = ({
   return (
     <Card
       sx={{
-        width: { md: "320px", xs: "100%" },
+        width: { md: "320px", xs: "100%", sm: "358px" },
         boxShadow: "none",
         borderRadius: 0,
       }}
@@ -39,11 +39,11 @@ const VideoCard = ({
         </Link>
         <Link
           to={
-            snippet?.channalId ? `/channal/${snippet?.channalId}` : demoVideoUrl
+            snippet?.channelId ? `/channel/${snippet?.channelId}` : demoVideoUrl
           }
         >
           <Typography variant="subtitle2" fontWeight="bold" color="gray">
-            {snippet?.channalTitle || demoChannelTitle}
+            {snippet?.channelTitle || demoChannelTitle}
             <CheckCircle sx={{ fontSize: 12, color: "gray", m1: "5px" }} />
           </Typography>
         </Link>

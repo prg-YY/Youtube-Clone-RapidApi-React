@@ -16,9 +16,9 @@ export const logo =
   "https://globalanimalwelfare.org/wp-content/uploads/2014/01/Rhino-Background.jpg"
 
 export const categories = [
-  { name: "New", icon: <HomeIcon /> },
-  { name: "JS Mastery", icon: <CodeIcon /> },
-  { name: "Coding", icon: <CodeIcon /> },
+  { name: "Facebook", icon: <HomeIcon /> },
+  { name: "BARIS BRA", icon: <CodeIcon /> },
+  { name: "Pidaiylar Ekrani", icon: <CodeIcon /> },
   { name: "ReactJS", icon: <CodeIcon /> },
   { name: "NextJS", icon: <CodeIcon /> },
   { name: "Music", icon: <MusicNoteIcon /> },
