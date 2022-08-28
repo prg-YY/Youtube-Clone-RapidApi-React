@@ -9,6 +9,8 @@ import {
   SearchFeed,
 } from "./components"
 
+console.log(process.env)
+
 const App = () => (
   <BrowserRouter>
     <Box sx={{ backgroundColor: "#000" }}>
