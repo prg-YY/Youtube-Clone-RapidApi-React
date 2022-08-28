@@ -1,6 +1,9 @@
 import MusicNoteIcon from "@mui/icons-material/MusicNote"
 import HomeIcon from "@mui/icons-material/Home"
-import CodeIcon from "@mui/icons-material/Code"
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism"
+import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt"
+import JavascriptIcon from "@mui/icons-material/Javascript"
+import Diversity2Icon from "@mui/icons-material/Diversity2"
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo"
 import SportsEsportsIcon from "@mui/icons-material/SportsEsports"
 import LiveTvIcon from "@mui/icons-material/LiveTv"
@@ -16,11 +19,11 @@ export const logo =
   "https://globalanimalwelfare.org/wp-content/uploads/2014/01/Rhino-Background.jpg"
 
 export const categories = [
-  { name: "NEW", icon: <HomeIcon /> },
-  { name: "BARIS BRA", icon: <CodeIcon /> },
-  { name: "Pidaiylar Ekrani", icon: <CodeIcon /> },
-  { name: "ReactJS", icon: <CodeIcon /> },
-  { name: "NextJS", icon: <CodeIcon /> },
+  { name: "News", icon: <HomeIcon /> },
+  { name: "BARIS BRA", icon: <PsychologyAltIcon /> },
+  { name: "Pidaiylar Ekrani", icon: <VolunteerActivismIcon /> },
+  { name: "ReactJS", icon: <Diversity2Icon /> },
+  { name: "JavaScript", icon: <JavascriptIcon /> },
   { name: "Music", icon: <MusicNoteIcon /> },
   { name: "Education", icon: <SchoolIcon /> },
   { name: "Podcast", icon: <GraphicEqIcon /> },

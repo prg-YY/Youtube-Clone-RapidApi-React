@@ -26,9 +26,16 @@ const VideoCard = ({
     >
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
-          image={snippet?.thumbnails?.high?.url}
+          image={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
           alt={snippet?.title}
-          sx={{ width: 358, height: 180 }}
+          sx={{
+            width: {
+              xs: "100%",
+              sm: "358px",
+              md: "320px",
+            },
+            height: 180,
+          }}
         />
       </Link>
       <CardContent sx={{ backgroundColor: "#1e1e1e", height: "106px" }}>
@@ -39,7 +46,9 @@ const VideoCard = ({
         </Link>
         <Link
           to={
-            snippet?.channelId ? `/channel/${snippet?.channelId}` : demoVideoUrl
+            snippet?.channelId
+              ? `/channel/${snippet?.channelId}`
+              : demoChannelUrl
           }
         >
           <Typography variant="subtitle2" fontWeight="bold" color="gray">
